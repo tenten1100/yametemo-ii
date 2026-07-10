@@ -1,0 +1,12 @@
+{
+  // Cloudflare Workers（静的アセット配信）設定
+  // - html_handling: /hikaku → hikaku.html を拡張子なしで配信
+  // - not_found_handling: 404.html をカスタム404として使用
+  "name": "yametemo-ii",
+  "compatibility_date": "2026-07-01",
+  "assets": {
+    "directory": ".",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

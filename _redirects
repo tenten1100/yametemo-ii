@@ -1,6 +1,5 @@
-# Cloudflare Pages redirects
-
-# www → apex（正規化）
-https://www.yametemo-ii.com/*  https://yametemo-ii.com/:splat  301
+# Cloudflare Workers static assets redirects
+# 注意: Workers版の_redirectsは相対URLのみ許可（絶対URL不可）。
+# www→apexの転送はCloudflareダッシュボードのリダイレクトルールで設定済み。
 
 /index.html  /  301

@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects
+
+# www → apex（正規化）
+https://www.yametemo-ii.com/*  https://yametemo-ii.com/:splat  301
+
+/index.html  /  301

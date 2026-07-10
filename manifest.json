@@ -1,0 +1,13 @@
+{
+  "name": "やめてもいい",
+  "short_name": "やめてもいい",
+  "description": "退職代行の比較と、後悔しない辞め方ガイド",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#14606a",
+  "categories": ["lifestyle", "business"],
+  "icons": [
+    { "src": "/images/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

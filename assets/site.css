@@ -189,3 +189,33 @@ table.cmp tbody th { background: var(--bg-tint); font-weight: 700; }
 .ft-nav { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 16px; }
 .ft-nav a { color: #fff; font-size: .85rem; }
 .ft-copy { font-size: .78rem; color: #8fa5b8; }
+
+/* ===== ASPバナー ===== */
+.bnr { text-align: center; margin: 24px 0; }
+.bnr img { max-width: 100%; height: auto; }
+.bnr::before { content: "PR"; display: block; font-size: .65rem; color: var(--ink-faint); margin-bottom: 4px; letter-spacing: .08em; }
+.bnr-pc { display: none; }
+@media (min-width: 720px) {
+  .bnr-pc { display: block; }
+  .bnr-sp { display: none; }
+}
+
+/* ===== モバイル固定CTA（消費者心理: 常時導線・男女自己選択） ===== */
+.sticky-cta {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 90;
+  display: flex; gap: 8px; align-items: center;
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(13, 69, 77, .96); backdrop-filter: blur(4px);
+}
+.sticky-cta .s-label { color: #bcd6da; font-size: .68rem; line-height: 1.3; flex-shrink: 0; }
+.sticky-cta a {
+  flex: 1; text-align: center; text-decoration: none; font-weight: 700;
+  font-size: .92rem; color: #fff; background: var(--green);
+  padding: 12px 8px; border-radius: 999px;
+}
+.sticky-cta a.w { background: var(--orange); }
+@media (min-width: 720px) { .sticky-cta { display: none; } }
+body:has(.sticky-cta) .ft { padding-bottom: 76px; }
+.cta .btn-cta { margin: 6px 4px; }
+.btn-cta.w { background: var(--orange); box-shadow: 0 3px 10px rgba(232, 118, 74, .3); }
+.btn-cta.w:hover { background: var(--orange-dark); }

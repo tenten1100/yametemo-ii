@@ -219,3 +219,8 @@ body:has(.sticky-cta) .ft { padding-bottom: 76px; }
 .cta .btn-cta { margin: 6px 4px; }
 .btn-cta.w { background: var(--orange); box-shadow: 0 3px 10px rgba(232, 118, 74, .3); }
 .btn-cta.w:hover { background: var(--orange-dark); }
+
+/* ===== 記事内イラスト（フリー素材・E-E-A-T） ===== */
+.illust { text-align: center; margin: 20px 0 28px; }
+.illust img { max-width: 280px; width: 100%; height: auto; }
+.illust figcaption { font-size: .78rem; color: var(--ink-faint); margin-top: 6px; }

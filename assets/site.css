@@ -243,3 +243,10 @@ body:has(.sticky-cta) .ft { padding-bottom: 76px; }
 .case-box { background: var(--bg-tint); border-left: 4px solid var(--blue); border-radius: 4px;
   padding: 16px 18px; margin: 0 0 20px; }
 .case-box .case-meta { font-size: .8rem; color: var(--ink-faint); display: block; margin-bottom: 6px; }
+
+/* ===== 2カラム＋サイドレール（広幅PCのみ・300×600） ===== */
+.wrap { display: flex; justify-content: center; align-items: flex-start; gap: 28px; }
+.wrap > .main { width: 100%; }
+.rail { display: none; width: 300px; flex-shrink: 0; position: sticky; top: 70px; padding-top: 24px; }
+.rail .bnr { margin: 0 0 18px; }
+@media (min-width: 1180px) { .rail { display: block; } }
